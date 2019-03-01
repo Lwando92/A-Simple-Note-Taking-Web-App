@@ -5,17 +5,17 @@ from flask import (
     jsonify
 )
 
-from utils.forms import (
+from forms import (
     LoginForm, SignUpForm,
     AddNoteForm, AddTagForm,
     ChangeEmailForm, ChangePasswordForm
 )
 
 from flask_restful import Resource, Api, reqparse
-from utils.decorators import login_required
+from decorators import login_required
 from flask_pagedown import PageDown
 from flask import Markup
-import utils.functions as functions
+import functions as functions
 import datetime
 import markdown
 import random
